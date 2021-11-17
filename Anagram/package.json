@@ -1,0 +1,15 @@
+{
+  "name": "anagram",
+  "version": "1.0.0",
+  "description": "BongoBD assignment Q1",
+  "main": "anagram.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Dep Joti Ghosh",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1"
+  }
+}
