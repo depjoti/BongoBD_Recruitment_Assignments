@@ -1,0 +1,12 @@
+{
+  "name": "design_pattern",
+  "version": "1.0.0",
+  "description": "BongoBD assignment Q2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dep Joti Ghosh",
+  "license": "ISC"
+}
