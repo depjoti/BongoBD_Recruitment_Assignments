@@ -24,7 +24,7 @@ function App() {
     videoRef.current.currentTime += 5;
   };
 
-  const revert = () => {
+  const rewind = () => {
     videoRef.current.currentTime -= 5;
   };
 
@@ -46,7 +46,7 @@ function App() {
       <div className="controlsContainer">
         <div className="controls">
           <img
-            onClick={revert}
+            onClick={rewind}
             className="controlsIcon"
             alt=""
             // src="/backward-5.svg"
