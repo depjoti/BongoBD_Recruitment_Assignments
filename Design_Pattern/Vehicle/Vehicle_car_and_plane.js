@@ -1,42 +1,20 @@
-class Vehicle{
+
+//Car Class
+class Car{
+    
     constructor(_wheels,_passengers,_gas=true){
-        this.num_of_wheels=_wheels;
-        this.num_of_passengers=_passengers;
+        this.set_num_of_wheels=_wheels;
+        this.set_num_of_passengers=_passengers;
         this.has_gas=_gas;
     }
     get wheels(){
-        return this.num_of_wheels;
+        return this.set_num_of_wheels;
     }
-    set wheels(_wheels){
-        this.num_of_wheels=_wheels
-    }
-
     get passengers(){
-        return this.num_of_passengers;
+        return this.set_num_of_passengers;
     }
-
-    set passengers(_passengers){
-        this.num_of_passengers=_passengers;
-    }
-    
     get gas(){
         return this.has_gas;
-    }
-
-    set gas(_gas){
-        this.has_gas=_gas;
-    }
-
-
-    
-
-    
-}
-
-//Car Class
-class Car extends Vehicle{
-    constructor(_wheels,_passengers,_gas){
-        super(_wheels,_passengers,_gas);
     }
 
     info(){
@@ -46,9 +24,20 @@ class Car extends Vehicle{
 }
 
 //Plane Class
-class Plane extends Vehicle{
-    constructor(_wheels,_passengers,_gas){
-        super(_wheels,_passengers,_gas);
+class Plane{
+    constructor(_wheels,_passengers,_gas=true){
+        this.set_num_of_wheels=_wheels;
+        this.set_num_of_passengers=_passengers;
+        this.has_gas=_gas;
+    }
+    get wheels(){
+        return this.set_num_of_wheels;
+    }
+    get passengers(){
+        return this.set_num_of_passengers;
+    }
+    get gas(){
+        return this.has_gas;
     }
 
     info(){
