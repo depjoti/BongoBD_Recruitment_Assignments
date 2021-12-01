@@ -1,84 +1,121 @@
-app {
+/* .App {
+  text-align: center;
+  ;
+}
+.button{
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Main Conatiner */
+
+.app{
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  height:100vh;
   overflow: hidden;
 }
 
 /* Video */
 
-.video {
+.video{
   width: 100vw;
-  height: 100vh;
+  height:100vh;
 }
 
 /* Controls */
 
-.controlsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  background-color: transparent;
-  margin-top: -50vw;
-  padding: 0 40px;
-  z-index: 20;
-}
-
-.controls {
+.controls{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 18rem;
+  padding-top:2rem;
   margin: auto;
+  position: absolute;
+  top: 6rem;
 }
 
-.controlsIcon {
-  width: 40px;
+.controlsIcon{
+  width: 30px;
   height: 40px;
   cursor: pointer;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  position: relative;
+  z-index: 30;
 }
 
-.controlsIcon--small {
-  width: 32px;
-  height: 32px;
+.controlsIcon--small{
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   margin-left: 10rem;
   margin-right: 10rem;
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 30;
 }
 
 /* The time controls section */
 
-.timecontrols {
+.timecontrols{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  bottom: 4rem;
-  margin-left: 10vw;
+  bottom: 2rem;
+  margin-left:10vw;
 }
 
-.time_progressbarContainer {
+.time_progressbarContainer{
   background-color: gray;
-  border-radius: 15px;
-  width: 75vw;
-  height: 5px;
+  border-radius:15px;
+  width: 70vw;
+  height:5px;
   z-index: 30;
   position: relative;
-  margin: 0 20px;
+  margin: auto;
 }
 
-.time_progressBar {
-  border-radius: 15px;
-  background-color: indigo;
-  height: 100%;
-}
-
-.controlsTime {
+.controlsTime{
   color: white;
 }
